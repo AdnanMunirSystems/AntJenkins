@@ -1,21 +1,5 @@
 <project default="test" name="UnitTests" xmlns:sonar="antlib:org.sonar.ant" basedir=".">
-	<property name="sonar.host.url" value="http://localhost:9000" />
-	<!-- Define the SonarQube project properties -->
-	<property name="sonar.projectKey" value="org.codehaus.sonar:example-java-ant" />
-	<property name="sonar.projectName" value="Simple Java Project analyzed with the SonarQube Ant Task" />
-	<property name="sonar.projectVersion" value="1.0" />
-	<property name="sonar.sources" value="src" />
 	
-	<property name="sonar.java.libraries" value="lib/*.jar" />
-	
-	<path id="sonar-ant-tasks.classpath" path="lib/sonar-ant-task-2.3.jar" />
-	
-	<target name="sonar">
-		<typedef resource="net/sf/antcontrib/antlib.xml" uri="antlib:org.sonar.ant" classpathref="sonar-ant-tasks.classpath" />
-		    
-		    <!-- Execute the SonarQube analysis -->
-	    <sonar:sonar/>
-		</target>
 <target name="compile">
 	<javac srcdir="./src" destdir="staging" includeantruntime="false" classpath="junit-4.12.jar"> </javac>
 </target>    
