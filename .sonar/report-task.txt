@@ -1,0 +1,5 @@
+projectKey=org.codehaus.sonar:example-java-ant
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/org.codehaus.sonar:example-java-ant
+ceTaskId=AVaN2gH8QtGSP4e39RCS
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AVaN2gH8QtGSP4e39RCS
